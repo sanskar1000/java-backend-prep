@@ -1,5 +1,10 @@
-//Demonstrates methods with parameters
 package methods;
+
+/*
+ Program: MethodBasics
+ Purpose: Demonstrate basic method creation and usage
+ Concept: Method parameters
+*/
 
 public class MethodWithParameters {
 
