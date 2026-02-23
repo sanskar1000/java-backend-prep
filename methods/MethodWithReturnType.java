@@ -1,5 +1,12 @@
 package methods;
 
+
+/*
+ Program: MethodBasics
+ Purpose: Demonstrate basic method creation and usage
+ Concept: Method Return Type
+*/
+
 public class MethodWithReturnType {
 
     static int getSquare(int number) {
