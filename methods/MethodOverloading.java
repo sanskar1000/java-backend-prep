@@ -1,5 +1,10 @@
-//Demonstrates method overloading
 package methods;
+
+/*
+ Program: MethodOverloading
+ Purpose: Demonstrate method overloading in Java
+ Concept: Same method name with different parameter lists
+*/
 
 public class MethodOverloading {
 
