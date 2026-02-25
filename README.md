@@ -1,3 +1,9 @@
+# 🚀 Java Backend Preparation Repository
+
+![Java](https://img.shields.io/badge/Language-Java-orange)
+![Progress](https://img.shields.io/badge/Progress-40%25-blue)
+![Status](https://img.shields.io/badge/Practice-Daily-green)
+
 # Java Core Practice Repository
 
 A structured Java practice repository focused on mastering core Java concepts 
