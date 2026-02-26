@@ -100,14 +100,12 @@ to advanced core concepts.
   - Practice program of methods
 
 arrays/
-   ├── oneD/
-   
-   └── twoD/
-   
-   └── methods/
+  - oneD/
+  - twoD/
+  - methods/
 
 strings/
- - Basic stringas
+   └── Basic stringas
    
 - .gitignore
 -  README.md
