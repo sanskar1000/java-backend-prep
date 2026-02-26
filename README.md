@@ -99,13 +99,13 @@ to advanced core concepts.
   - Method overloading
   - Practice program of methods
 
-arrays/
+- arrays/
   - oneD/
   - twoD/
   - methods/
 
-strings/
-   └── Basic stringas
+- strings/
+  - Basic stringas
    
 - .gitignore
 -  README.md
