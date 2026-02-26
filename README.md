@@ -72,6 +72,20 @@ to advanced core concepts.
 
 ### strings
 - basic string
+
+![Progress](https://img.shields.io/badge/Progress-40%25-blue)
+## 📊 Progress Tracker
+
+| Topic | Status |
+|--------|--------|
+| Basics | ✅ Done |
+| Operators | ✅ Done |
+| Condition | ✅ Done |
+| Loops | ✅ Done |
+| Methods | ✅ Done |
+| Arrays |  ✅ Done |
+| Strings | 🔄 Practicing |
+| OOP | ⏳ Next |
   
   
 ## Folder Structure
