@@ -73,6 +73,7 @@ to advanced core concepts.
 ### strings
 - basic string
 - String methods
+- String buffer
 
 ![Progress](https://img.shields.io/badge/Progress-40%25-blue)
 ## 📊 Progress Tracker
@@ -122,6 +123,7 @@ to advanced core concepts.
 - strings/
   - Basic strings
   - Strings methods
+  - Strings buffer 
    
 - .gitignore
 -  README.md
