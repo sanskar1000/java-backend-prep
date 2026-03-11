@@ -75,7 +75,8 @@ to advanced core concepts.
 - String methods
 - String buffer
 - String builder
-
+- String Tokenizer
+  
 ![Progress](https://img.shields.io/badge/Progress-40%25-blue)
 ## 📊 Progress Tracker
 
@@ -125,8 +126,9 @@ to advanced core concepts.
   - Basic strings
   - Strings methods
   - String buffer
-  - String builder 
-   
+  - String builder
+  - String Tokenizer
+       
 - .gitignore
 -  README.md
 
@@ -154,7 +156,6 @@ to advanced core concepts.
 
 ## 🎯 Upcoming Topics
 
-- Strings
 - Object-Oriented Programming (OOP)
 - Exception Handling
 - Collections Framework
