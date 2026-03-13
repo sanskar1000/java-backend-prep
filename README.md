@@ -76,6 +76,7 @@ to advanced core concepts.
 - String buffer
 - String builder
 - String Tokenizer
+- String Practice
   
 ![Progress](https://img.shields.io/badge/Progress-40%25-blue)
 ## 📊 Progress Tracker
@@ -128,6 +129,7 @@ to advanced core concepts.
   - String buffer
   - String builder
   - String Tokenizer
+  - String practice
        
 - .gitignore
 -  README.md
