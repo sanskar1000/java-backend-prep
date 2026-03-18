@@ -1,0 +1,65 @@
+package strings.practice;
+import java.util.Scanner;
+
+/**
+ * ------------------------------------------------------------
+ * Program Name : FirstRepeatingCharacter
+ * Topic        : Java Strings
+ * Level        : Intermediate
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program finds the first repeating character in a string.
+ * A repeating character is one that appears more than once,
+ * and we return the first such character based on order.
+ *
+ * Key Concepts:
+ * • Frequency array
+ * • String traversal
+ * • Character tracking
+ *
+ * Example:
+ * Input  : programming
+ * Output : r
+ *
+ * Time Complexity  : O(n)
+ * Space Complexity : O(1)
+ * ------------------------------------------------------------
+ */
+
+public class FirstRepeatingCharacter {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter string: ");
+        String str = sc.nextLine();
+
+        int[] freq = new int[65536]; // Unicode safe
+
+        // Count frequency
+        for (int i = 0; i < str.length(); i++) {
+            freq[str.charAt(i)]++;
+        }
+
+        char result = '\0';
+
+        // Find first repeating character
+        for (int i = 0; i < str.length(); i++) {
+            if (freq[str.charAt(i)] > 1) {
+                result = str.charAt(i);
+                break;
+            }
+        }
+
+        if (result != '\0') {
+            System.out.println("First repeating character: " + result);
+        } else {
+            System.out.println("No repeating character found.");
+        }
+
+        sc.close();
+    }
+}
