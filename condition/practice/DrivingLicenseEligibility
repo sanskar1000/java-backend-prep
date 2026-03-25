@@ -1,0 +1,68 @@
+package condition.practice;
+import java.util.Scanner;
+
+/**
+ * ------------------------------------------------------------
+ * Program Name : DrivingLicenseEligibility
+ * Topic        : Nested if-else
+ * Level        : Beginner / Intermediate
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program checks whether a person is eligible
+ * for a driving license based on:
+ *
+ * • Age (must be 18 or above)
+ * • Valid ID proof
+ * • Passing the driving test
+ *
+ * Key Concepts:
+ * • Nested if-else
+ * • Boolean input handling
+ *
+ * Example:
+ * Input  : 20, true, true
+ * Output : Eligible for driving license
+ *
+ * Time Complexity  : O(1)
+ * Space Complexity : O(1)
+ * ------------------------------------------------------------
+ */
+
+public class DrivingLicenseEligibility {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter age: ");
+        int age = sc.nextInt();
+
+        if (age >= 18) {
+
+            System.out.print("Do you have valid ID proof? (true/false): ");
+            boolean hasID = sc.nextBoolean();
+
+            if (hasID) {
+
+                System.out.print("Did you pass the driving test? (true/false): ");
+                boolean passedTest = sc.nextBoolean();
+
+                if (passedTest) {
+                    System.out.println("Eligible for driving license");
+                } else {
+                    System.out.println("Not eligible: Driving test not passed");
+                }
+
+            } else {
+                System.out.println("Not eligible: ID proof required");
+            }
+
+        } else {
+            System.out.println("Not eligible: Age must be 18 or above");
+        }
+
+        sc.close();
+    }
+}
