@@ -1,4 +1,4 @@
-
+package condition.practice;
 import java.util.Scanner;
 
 /**
