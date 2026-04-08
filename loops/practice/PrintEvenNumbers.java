@@ -1,0 +1,54 @@
+package loops.practice;
+
+import java.util.Scanner;
+
+/**
+ * ------------------------------------------------------------
+ * Program Name : PrintEvenNumbers
+ * Topic        : Loops (for loop)
+ * Level        : Beginner
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program prints all even numbers from 1 to N.
+ *
+ * Logic:
+ * • Start from 2
+ * • Increment by 2 each time
+ *
+ * Input:
+ * • A positive integer N
+ *
+ * Output:
+ * • Even numbers from 1 to N
+ *
+ * Time Complexity  : O(n/2) ≈ O(n)
+ * Space Complexity : O(1)
+ * ------------------------------------------------------------
+ */
+
+public class PrintEvenNumbers {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
+
+        if (n <= 0) {
+            System.out.println("❌ Please enter a positive number");
+            sc.close();
+            return;
+        }
+
+        System.out.println("✔ Even numbers from 1 to " + n + ":");
+
+        for (int i = 2; i <= n; i += 2) {
+            System.out.println(i);
+        }
+
+        sc.close();
+    }
+}
