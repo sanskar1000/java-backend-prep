@@ -1,7 +1,40 @@
-//Demonstrates else-if ladder
-package condition; 
+package condition;
 
 import java.util.Scanner;
+
+/**
+ * ------------------------------------------------------------
+ * Program Name : ElseIfLadderDemo
+ * Topic        : Conditional Statements (Else-If Ladder)
+ * Level        : Beginner
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program demonstrates the use of an else-if ladder
+ * to classify student grades based on marks.
+ *
+ * Grading Criteria:
+ * • Marks ≥ 90  → Grade A
+ * • Marks ≥ 75  → Grade B
+ * • Marks ≥ 60  → Grade C
+ * • Marks ≥ 40  → Grade D
+ * • Marks < 40  → Fail
+ *
+ * Input:
+ * • Integer value representing marks
+ *
+ * Output:
+ * • Corresponding grade based on marks
+ *
+ * Example:
+ * Input  : 82
+ * Output : Grade: B
+ *
+ * Time Complexity  : O(1)
+ * Space Complexity : O(1)
+ * ------------------------------------------------------------
+ */
 
 public class ElseIfLadderDemo {
 
@@ -28,5 +61,6 @@ public class ElseIfLadderDemo {
             System.out.println("Grade: Fail");
         }
 
+        sc.close();
     }
 }
