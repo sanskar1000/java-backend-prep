@@ -1,6 +1,39 @@
-// Demonstrates switch statement in Javapackage condition;
+package condition;
 
 import java.util.Scanner;
+
+/**
+ * ------------------------------------------------------------
+ * Program Name : SwitchDemo
+ * Topic        : Conditional Statements (Switch Case)
+ * Level        : Beginner
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program demonstrates the use of a switch statement
+ * to map a number (1–7) to the corresponding day of the week.
+ *
+ * Logic:
+ * • Each case represents a day number
+ * • Switch matches input with case value
+ * • Break prevents fall-through
+ * • Default handles invalid input
+ *
+ * Input:
+ * • Integer (1 to 7)
+ *
+ * Output:
+ * • Prints the corresponding day name
+ *
+ * Example:
+ * Input  : 3
+ * Output : Wednesday
+ *
+ * Time Complexity  : O(1)
+ * Space Complexity : O(1)
+ * ------------------------------------------------------------
+ */
 
 public class SwitchDemo {
 
@@ -29,13 +62,14 @@ public class SwitchDemo {
                 break;
             case 6:
                 System.out.println("Saturday");
-                break; 
+                break;
             case 7:
                 System.out.println("Sunday");
                 break;
             default:
-                System.out.println("Invalid input");
+                System.out.println("❌ Invalid input");
         }
 
+        sc.close();
     }
 }
