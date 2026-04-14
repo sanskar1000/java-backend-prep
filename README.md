@@ -77,6 +77,9 @@ to advanced core concepts.
 - String builder
 - String Tokenizer
 - String Practice
+
+### Object-Oriented Programming (OOP's)
+- 01-class-object
   
 ![Progress](https://img.shields.io/badge/Progress-40%25-blue)
 ## 📊 Progress Tracker
@@ -89,10 +92,10 @@ to advanced core concepts.
 | Loops | ✅ Done |
 | Methods | ✅ Done |
 | Arrays |  ✅ Done |
-| Strings | 🔄 Practicing |
-| OOP | ⏳ Next |
-  
-  
+| Strings |  ✅ Done |
+| OOP | 🔄 Practicing |
+| Exception Handling | Next |
+
 ## Folder Structure
 
 - basics/  
@@ -130,7 +133,11 @@ to advanced core concepts.
   - String builder
   - String Tokenizer
   - String practice
-       
+
+- oop/
+  - 01-class-object
+    
+      
 - .gitignore
 -  README.md
 
