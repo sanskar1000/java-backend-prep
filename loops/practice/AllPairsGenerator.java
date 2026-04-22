@@ -1,3 +1,4 @@
+package loops.practice;
 import java.util.Scanner;
 
 /**
