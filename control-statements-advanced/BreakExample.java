@@ -1,6 +1,23 @@
 //Demonstrates control-statments
 package controlstatementsadvanced;
 
+/**
+ * ------------------------------------------------------------
+ * Program Name : BreakExample.java
+ * Topic        : control-statments
+ * Level        : Beginner
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program demonstrates the use of an break statement 
+ * to classify break statement 
+ *
+ * Time Complexity  : O(1)
+ * Space Complexity : O(1)
+ * ------------------------------------------------------------
+ */
+
 public class BreakExample {
 
     public static void main(String[] args) {
