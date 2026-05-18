@@ -1,0 +1,79 @@
+package oop;
+/**
+ * ------------------------------------------------------------
+ * Program Name : MobilePhoneDemo
+ * Topic        : Class and Object (OOP Basics)
+ * Level        : Beginner
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program demonstrates:
+ * - class creation
+ * - object creation
+ * - instance variables
+ * - object methods
+ * - independent object state
+ *
+ * A MobilePhone class is created with:
+ * - brand
+ * - price
+ *
+ * Two different objects are created
+ * to show that each object maintains
+ * its own separate data.
+ *
+ * Concepts Used:
+ * - classes
+ * - objects
+ * - instance variables
+ * - methods
+ * - dot operator
+ *
+ * Time Complexity  : O(1)
+ * Space Complexity : O(1)
+ * ------------------------------------------------------------
+ */
+
+class MobilePhone {
+
+    // 🔹 Instance variables
+    String brand;
+    int price;
+
+    /**
+     * Displays mobile phone details.
+     */
+    void displayDetails() {
+
+        System.out.println("Brand : " + brand);
+
+        System.out.println("Price : ₹" + price);
+
+        System.out.println();
+    }
+}
+
+public class MobilePhoneDemo {
+
+    public static void main(String[] args) {
+
+        // 🔹 Object creation
+        MobilePhone m1 = new MobilePhone();
+
+        MobilePhone m2 = new MobilePhone();
+
+        // 🔹 Assign values to object 1
+        m1.brand = "Apple";
+        m1.price = 50000;
+
+        // 🔹 Assign values to object 2
+        m2.brand = "Samsung";
+        m2.price = 40000;
+
+        // 🔹 Display details
+        m1.displayDetails();
+
+        m2.displayDetails();
+    }
+}
