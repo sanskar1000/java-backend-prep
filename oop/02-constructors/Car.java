@@ -1,4 +1,5 @@
 package oops.constructors;
+
 /**
  * ------------------------------------------------------------
  * Class Name : Car
@@ -8,7 +9,7 @@ package oops.constructors;
  *
  * Description:
  * Demonstrates:
- * - default constructor
+ * - parameterized constructor
  * - object initialization
  * - instance variables
  * - object methods
@@ -22,16 +23,17 @@ class Car {
     double price;
 
     /**
-     * Default constructor.
-     * Automatically initializes object values.
+     * Parameterized constructor.
+     *
+     * @param b car brand
+     * @param m car model
+     * @param p car price
      */
-    Car() {
+    Car(String b, String m, double p) {
 
-        System.out.println("Constructor called");
-
-        brand = "Unknown";
-        model = "Unknown";
-        price = 0.0;
+        brand = b;
+        model = m;
+        price = p;
     }
 
     /**
@@ -43,7 +45,8 @@ class Car {
 
         System.out.println("Brand : " + brand);
         System.out.println("Model : " + model);
-        System.out.println("Price : ₹" + price);
+
+        System.out.printf("Price : ₹%.2f%n", price);
 
         System.out.println();
     }
@@ -54,7 +57,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Object creation
-        Car c1 = new Car();
+        Car c1 = new Car("BMW", "M4", 9000000.0);
 
         // Display details
         c1.displayCarDetails();
