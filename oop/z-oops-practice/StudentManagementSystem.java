@@ -1,4 +1,5 @@
-package oops.practice
+package oops.practice;
+
 /**
  * ------------------------------------------------------------
  * Program Name : StudentManagementSystem
@@ -15,23 +16,32 @@ package oops.practice
  * - constructor overloading
  * - constructor chaining using this()
  * - object initialization
- * - instance variables
  * - validation methods
  * - object behavior
+ * - object comparison
+ * - object-to-object interaction
  *
  * Concepts Used:
  * - Classes and Objects
  * - Constructors
+ * - Constructor Chaining
  * - this keyword
- * - Method creation
- * - Object state management
- * - Validation logic
+ * - Instance Variables
+ * - Methods
+ * - Validation Logic
+ * - Object Communication
+ * - Reference Variables
  *
+ * Time Complexity  : O(1)
+ * Space Complexity : O(1)
  * ------------------------------------------------------------
  */
 
 class Student {
-    
+
+    // Constant
+    static final int PASS_MARKS = 40;
+
     // Instance Variables
     String name;
     int rollNumber;
@@ -59,10 +69,10 @@ class Student {
     /**
      * Main Parameterized Constructor
      *
-     * @param name student name
+     * @param name       student name
      * @param rollNumber student roll number
-     * @param course student course
-     * @param marks student marks
+     * @param course     student course
+     * @param marks      student marks
      */
     Student(String name,
             int rollNumber,
@@ -73,9 +83,17 @@ class Student {
         this.rollNumber = rollNumber;
         this.course = course;
 
+        // Validation
         if (marks >= 0 && marks <= 100) {
+
             this.marks = marks;
+
         } else {
+
+            System.out.println(
+                    "Invalid marks entered. Default marks assigned."
+            );
+
             this.marks = 0.0;
         }
     }
@@ -85,18 +103,38 @@ class Student {
      */
     void displayStudentDetails() {
 
-        System.out.println("Name        : " + name);
+        System.out.println(
+                "----- Student Details -----"
+        );
 
-        System.out.println("Roll Number : " + rollNumber);
+        System.out.println(
+                "Name        : " + name
+        );
 
-        System.out.println("Course      : " + course);
+        System.out.println(
+                "Roll Number : " + rollNumber
+        );
 
-        System.out.printf("Marks       : %.1f%n", marks);
+        System.out.println(
+                "Course      : " + course
+        );
 
-        if (marks >= 40) {
-            System.out.println("Result      : PASS");
+        System.out.printf(
+                "Marks       : %.1f%n",
+                marks
+        );
+
+        if (marks >= PASS_MARKS) {
+
+            System.out.println(
+                    "Result      : PASS"
+            );
+
         } else {
-            System.out.println("Result      : FAIL");
+
+            System.out.println(
+                    "Result      : FAIL"
+            );
         }
 
         System.out.println();
@@ -113,11 +151,51 @@ class Student {
 
             this.marks = marks;
 
-            System.out.println("Marks updated successfully.");
+            System.out.println(
+                    "Marks updated successfully."
+            );
 
         } else {
 
-            System.out.println("Invalid marks.");
+            System.out.println(
+                    "Invalid marks."
+            );
+        }
+
+        System.out.println();
+    }
+
+    /**
+     * Compares marks between two students.
+     *
+     * @param other another student object
+     */
+    void compareMarks(Student other) {
+
+        if (this.marks > other.marks) {
+
+            System.out.println(
+                    this.name +
+                            " has higher marks than " +
+                            other.name
+            );
+
+        } else if (this.marks < other.marks) {
+
+            System.out.println(
+                    other.name +
+                            " has higher marks than " +
+                            this.name
+            );
+
+        } else {
+
+            System.out.println(
+                    this.name +
+                            " and " +
+                            other.name +
+                            " have equal marks"
+            );
         }
 
         System.out.println();
@@ -143,25 +221,28 @@ public class Main {
                         87.8
                 );
 
+        // Display Student 1
         System.out.println(
-                "----- Student 1 -----"
+                "===== Student 1 ====="
         );
 
         s1.displayStudentDetails();
 
+        // Display Student 2
         System.out.println(
-                "----- Student 2 -----"
+                "===== Student 2 ====="
         );
 
         s2.displayStudentDetails();
 
+        // Display Student 3
         System.out.println(
-                "----- Student 3 -----"
+                "===== Student 3 ====="
         );
 
         s3.displayStudentDetails();
 
-        // Updating marks
+        // Update marks
         System.out.println(
                 "Updating Marks..."
         );
@@ -170,5 +251,14 @@ public class Main {
 
         s3.updateMarks(95);
 
+        // Display updated details
         s3.displayStudentDetails();
+
+        // Compare marks
+        System.out.println(
+                "===== Marks Comparison ====="
+        );
+
+        s2.compareMarks(s3);
     }
+}
