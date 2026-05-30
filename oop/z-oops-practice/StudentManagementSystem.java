@@ -20,6 +20,7 @@ package oops.practice;
  * - object behavior
  * - object comparison
  * - object-to-object interaction
+ * - average marks calculation
  *
  * Concepts Used:
  * - Classes and Objects
@@ -200,6 +201,18 @@ class Student {
 
         System.out.println();
     }
+
+    /**
+     * Calculates average marks
+     * between two students.
+     *
+     * @param other another student object
+     * @return average marks
+     */
+    double calculateAverage(Student other) {
+
+        return (this.marks + other.marks) / 2.0;
+    }
 }
 
 public class Main {
@@ -242,16 +255,26 @@ public class Main {
 
         s3.displayStudentDetails();
 
-        // Update marks
+        // Update marks of Student 2
         System.out.println(
-                "Updating Marks..."
+                "Updating Marks of Student 2..."
+        );
+
+        System.out.println();
+
+        s2.updateMarks(70.7);
+
+        s2.displayStudentDetails();
+
+        // Update marks of Student 3
+        System.out.println(
+                "Updating Marks of Student 3..."
         );
 
         System.out.println();
 
         s3.updateMarks(95);
 
-        // Display updated details
         s3.displayStudentDetails();
 
         // Compare marks
@@ -260,5 +283,19 @@ public class Main {
         );
 
         s2.compareMarks(s3);
+
+        // Calculate average
+        System.out.println(
+                "===== Average Marks ====="
+        );
+
+        double avg = s2.calculateAverage(s3);
+
+        System.out.printf(
+                "Average of %s and %s : %.2f%n",
+                s2.name,
+                s3.name,
+                avg
+        );
     }
 }
