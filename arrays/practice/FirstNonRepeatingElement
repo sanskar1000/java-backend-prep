@@ -1,0 +1,101 @@
+package arrays.practice;
+import java.util.Scanner;
+
+/**
+ * ------------------------------------------------------------
+ * Program Name : FirstNonRepeatingElement
+ * Topic        : Arrays in Java
+ * Level        : Beginner → Intermediate
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program finds the first non-repeating element
+ * in an array using frequency counting.
+ *
+ * Concepts Used:
+ * - Arrays
+ * - Nested loops
+ * - Frequency counting
+ * - Boolean flag
+ * - Searching
+ * - Input validation
+ *
+ * Time Complexity  : O(n²)
+ * Space Complexity : O(1)
+ * ------------------------------------------------------------
+ */
+
+public class Main {
+
+    /**
+     * Finds the first non-repeating element.
+     *
+     * @param arr input array
+     */
+    static void findFirstNonRepeatingElement(int[] arr) {
+
+        boolean found = false;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            int frequency = 0;
+
+            for (int j = 0; j < arr.length; j++) {
+
+                if (arr[i] == arr[j]) {
+                    frequency++;
+                }
+            }
+
+            if (frequency == 1) {
+
+                System.out.println(
+                        "First non-repeating element : "
+                                + arr[i]
+                );
+
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+
+            System.out.println(
+                    "No non-repeating element found."
+            );
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter size of array : ");
+
+        int n = sc.nextInt();
+
+        // Input validation
+        if (n <= 0) {
+
+            System.out.println("Invalid size");
+
+            sc.close();
+            return;
+        }
+
+        int[] arr = new int[n];
+
+        System.out.print("Enter array elements : ");
+
+        for (int i = 0; i < n; i++) {
+
+            arr[i] = sc.nextInt();
+        }
+
+        findFirstNonRepeatingElement(arr);
+
+        sc.close();
+    }
+}
