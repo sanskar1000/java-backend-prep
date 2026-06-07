@@ -4,45 +4,36 @@ import java.util.Scanner;
 /**
  * ------------------------------------------------------------
  * Program Name : ArrayPalindromeChecker
- * Topic        : Arrays
+ * Topic        : Arrays - Two Pointer Technique
  * Level        : Beginner → Intermediate
  * Author       : Aradhya Thakur
  * Year         : 2026
  *
  * Description:
- * This program checks whether an array is palindrome
- * or not using the Two Pointer Technique.
+ * Checks whether an array is a palindrome
+ * using the Two Pointer Technique.
  *
- * A palindrome array reads the same:
- * - from left to right
- * - and from right to left
+ * A palindrome array reads the same
+ * from left to right and right to left.
  *
  * Example:
- * Input  : 1 2 3 2 1
+ * Input  : [1, 2, 3, 2, 1]
  * Output : Array is palindrome
- *
- * Concepts Used:
- * - Arrays
- * - Methods
- * - Two Pointer Technique
- * - Input Validation
- * - Looping
- * - Conditional Statements
  *
  * Time Complexity  : O(n)
  * Space Complexity : O(1)
+ *
+ * Concepts Used:
+ * - Arrays
+ * - Two Pointers
+ * - Method Creation
+ * - Boolean Return Type
  * ------------------------------------------------------------
  */
-
 public class Main {
 
     /**
-     * Checks whether the given array is palindrome.
-     *
-     * Logic:
-     * - Compare first and last element
-     * - Move toward center
-     * - If mismatch found → not palindrome
+     * Checks whether the array is a palindrome.
      *
      * @param arr input array
      * @return true if palindrome, otherwise false
@@ -50,61 +41,61 @@ public class Main {
     static boolean isPalindrome(int[] arr) {
 
         int left = 0;
-
         int right = arr.length - 1;
 
         while (left < right) {
 
-            // Compare elements
             if (arr[left] != arr[right]) {
-
                 return false;
             }
 
-            // Move pointers
             left++;
-
             right--;
         }
 
         return true;
     }
 
+    /**
+     * Prints array elements.
+     *
+     * @param arr array to print
+     */
+    static void printArray(int[] arr) {
+
+        for (int element : arr) {
+            System.out.print(element + " ");
+        }
+
+        System.out.println();
+    }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        // Input array size
-        System.out.print("Enter size of array : ");
-
+        System.out.print("Enter size of array: ");
         int n = sc.nextInt();
 
-        // Input validation
         if (n <= 0) {
 
             System.out.println("Invalid size");
-
             sc.close();
-
             return;
         }
 
-        // Array creation
         int[] arr = new int[n];
 
-        // Input array elements
-        System.out.print("Enter Array : ");
+        System.out.print("Enter array elements: ");
 
         for (int i = 0; i < n; i++) {
-
             arr[i] = sc.nextInt();
         }
 
-        // Method call
-        boolean palindrome = isPalindrome(arr);
+        System.out.print("Array: ");
+        printArray(arr);
 
-        // Output result
-        if (palindrome) {
+        if (isPalindrome(arr)) {
 
             System.out.println("Array is palindrome");
 
