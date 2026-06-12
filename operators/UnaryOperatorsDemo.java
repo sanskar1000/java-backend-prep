@@ -1,31 +1,116 @@
 package operators;
 
+/**
+ * ------------------------------------------------------------
+ * Program Name : UnaryOperatorsDemo
+ * Topic        : Unary Operators in Java
+ * Level        : Beginner
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program demonstrates the use of
+ * unary operators in Java.
+ *
+ * Unary operators operate on a single operand.
+ *
+ * Operators Covered:
+ * +  Unary Plus
+ * -  Unary Minus
+ * ++ Increment Operator
+ * -- Decrement Operator
+ * !  Logical NOT Operator
+ *
+ * Concepts Used:
+ * - Unary Operators
+ * - Variables
+ * - Pre-Increment
+ * - Post-Increment
+ * - Pre-Decrement
+ * - Post-Decrement
+ * - Boolean Logic
+ *
+ * Time Complexity  : O(1)
+ * Space Complexity : O(1)
+ * ------------------------------------------------------------
+ */
+
 public class UnaryOperatorsDemo {
 
     public static void main(String[] args) {
 
-        int a = 5;
+        int number = 5;
 
-        System.out.println("Initial value of a: " + a);
+        System.out.println(
+                "Initial Value = " + number
+        );
 
-        // Unary plus and minus
-        System.out.println("Unary plus (+a): " + (+a));
-        System.out.println("Unary minus (-a): " + (-a));
+        System.out.println();
 
-        // Increment operators
-        System.out.println("Post-increment (a++): " + (a++));
-        System.out.println("After post-increment, a: " + a);
+        // Unary Plus
+        System.out.println(
+                "Unary Plus (+number) = " + (+number)
+        );
 
-        System.out.println("Pre-increment (++a): " + (++a));
+        // Unary Minus
+        System.out.println(
+                "Unary Minus (-number) = " + (-number)
+        );
 
-        // Decrement operators
-        System.out.println("Post-decrement (a--): " + (a--));
-        System.out.println("After post-decrement, a: " + a);
+        System.out.println();
 
-        System.out.println("Pre-decrement (--a): " + (--a));
+        // Post Increment
+        System.out.println(
+                "Post Increment (number++) = "
+                        + (number++)
+        );
 
-        // Logical NOT
+        System.out.println(
+                "Value After Post Increment = "
+                        + number
+        );
+
+        System.out.println();
+
+        // Pre Increment
+        System.out.println(
+                "Pre Increment (++number) = "
+                        + (++number)
+        );
+
+        System.out.println();
+
+        // Post Decrement
+        System.out.println(
+                "Post Decrement (number--) = "
+                        + (number--)
+        );
+
+        System.out.println(
+                "Value After Post Decrement = "
+                        + number
+        );
+
+        System.out.println();
+
+        // Pre Decrement
+        System.out.println(
+                "Pre Decrement (--number) = "
+                        + (--number)
+        );
+
+        System.out.println();
+
         boolean flag = true;
-        System.out.println("Logical NOT (!flag): " + (!flag));
+
+        System.out.println(
+                "Original Boolean Value = "
+                        + flag
+        );
+
+        System.out.println(
+                "Logical NOT (!flag) = "
+                        + (!flag)
+        );
     }
 }
