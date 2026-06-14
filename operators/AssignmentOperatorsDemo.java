@@ -1,26 +1,68 @@
 package operators;
 
+/**
+ * ------------------------------------------------------------
+ * Program Name : AssignmentOperatorsDemo
+ * Topic        : Assignment Operators in Java
+ * Level        : Beginner
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program demonstrates the use of
+ * assignment operators in Java.
+ *
+ * Operators Covered:
+ * =   Assignment
+ * +=  Add and Assign
+ * -=  Subtract and Assign
+ * *=  Multiply and Assign
+ * /=  Divide and Assign
+ * %=  Modulus and Assign
+ *
+ * Concepts Used:
+ * - Variables
+ * - Assignment Operators
+ * - Arithmetic Operations
+ *
+ * Time Complexity  : O(1)
+ * Space Complexity : O(1)
+ * ------------------------------------------------------------
+ */
+
 public class AssignmentOperatorsDemo {
 
     public static void main(String[] args) {
 
-        int a = 10;
+        int number = 10;
 
-        System.out.println("Initial value of a: " + a);
+        System.out.println(
+                "Initial Value : " + number
+        );
 
-        a += 5;   // a = a + 5
-        System.out.println("After a += 5 : " + a);
+        number += 5;
+        System.out.println(
+                "After += 5    : " + number
+        );
 
-        a -= 3;   // a = a - 3
-        System.out.println("After a -= 3 : " + a);
+        number -= 3;
+        System.out.println(
+                "After -= 3    : " + number
+        );
 
-        a *= 2;   // a = a * 2
-        System.out.println("After a *= 2 : " + a);
+        number *= 2;
+        System.out.println(
+                "After *= 2    : " + number
+        );
 
-        a /= 4;   // a = a / 4
-        System.out.println("After a /= 4 : " + a);
+        number /= 4;
+        System.out.println(
+                "After /= 4    : " + number
+        );
 
-        a %= 3;   // a = a % 3
-        System.out.println("After a %= 3 : " + a);
+        number %= 3;
+        System.out.println(
+                "After %= 3    : " + number
+        );
     }
 }
