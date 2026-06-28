@@ -4,8 +4,6 @@
 ![Progress](https://img.shields.io/badge/Progress-40%25-blue)
 ![Status](https://img.shields.io/badge/Practice-Daily-green)
 
-# Java Core Practice Repository
-
 A structured Java practice repository focused on mastering core Java concepts 
 through small, focused programs and logical problem solving.
 
@@ -15,7 +13,7 @@ to advanced core concepts.
 ## 🚀 Purpose of This Repository
 
 - Strengthen Java fundamentals
-- Practice clean and readable coding
+- Practice writing clean and readable code
 - Improve logical problem-solving skills
 - Build strong base for backend development
 
@@ -42,7 +40,7 @@ to advanced core concepts.
 - else-if ladder
 - Nested if
 - switch statement
-- practice programs for decision making
+- Practice programs for decision-making.
 
 ### Loops
 - for loop
@@ -65,12 +63,12 @@ to advanced core concepts.
 - Method overloading
 - Method-based problem solving
 
-### arrays
+### Arrays
 - 1D array
 - 2D array
 - Array Methods – Programs using built-in Arrays class and custom array methods
 
-### strings
+### Strings
 - basic string
 - String methods
 - String buffer
@@ -78,10 +76,11 @@ to advanced core concepts.
 - String Tokenizer
 - String Practice
 
-### Object-Oriented Programming (OOP's)
+### Object-Oriented Programming (OOP)
 - 01-class-object
+- 02-constructors
+- 03-encapsulation
   
-![Progress](https://img.shields.io/badge/Progress-40%25-blue)
 ## 📊 Progress Tracker
 
 | Topic | Status |
@@ -104,7 +103,7 @@ to advanced core concepts.
 - operators/  
   Programs demonstrating different operators
 
-- condition/  
+- conditional-statements/  
   Conditional statements with practice programs
   
 - loops/
@@ -119,7 +118,7 @@ to advanced core concepts.
   - Parameters and arguments
   - Return types
   - Method overloading
-  - Practice program of methods
+  - Method practice programs
 
 - arrays/
   - oneD/
@@ -128,7 +127,7 @@ to advanced core concepts.
 
 - strings/
   - Basic strings
-  - Strings methods
+  - String methods
   - String buffer
   - String builder
   - String Tokenizer
@@ -136,6 +135,8 @@ to advanced core concepts.
 
 - oop/
   - 01-class-object
+  - 02-constructors
+  - 03-encapsulation
     
       
 - .gitignore
@@ -165,7 +166,6 @@ to advanced core concepts.
 
 ## 🎯 Upcoming Topics
 
-- Object-Oriented Programming (OOP)
 - Exception Handling
 - Collections Framework
 - File Handling
@@ -176,20 +176,16 @@ to advanced core concepts.
 - `.gitignore` is used to exclude compiled files, IDE settings, and system-generated files
 - Keeps the repository clean and professional
 
-## Tools & Language
+##  Tools & Technologies
 	-	Language: Java
 	-	IDE: Any Java-supported IDE (IntelliJ IDEA / VS Code / Eclipse)
 	-	Java Version: Standard JDK
 
-## Progress Philosophy
-  Consistency beats intensity.
-  
-This repository is updated gradually as concepts are learned and practiced.
+## 📈 Progress Philosophy
 
-## Purpose
+Consistency beats intensity.
 
-This repository tracks my progress in Java and helps me
-develop logical thinking and clean coding habits.
+This repository is updated gradually as concepts are learned, practiced, and mastered.
 
 ## 👨‍💻 Author
 
