@@ -187,6 +187,25 @@ Consistency beats intensity.
 
 This repository is updated gradually as concepts are learned, practiced, and mastered.
 
+## ⭐ Features
+
+- Beginner-friendly programs
+- Step-by-step learning approach
+- Clean folder structure
+- Practical coding exercises
+- Focus on logic building
+- Regular progress tracking
+
+## 📌 Future Goals
+
+- Master Core Java
+- Learn Exception Handling
+- Study Collections Framework
+- Build Mini Projects
+- Learn JDBC and MySQL
+- Learn Spring Boot
+- Become a Java Backend Developer
+  
 ## 👨‍💻 Author
 
 Aradhya Singh Thakur  
