@@ -80,6 +80,7 @@ to advanced core concepts.
 - 01-class-object
 - 02-constructors
 - 03-encapsulation
+- 04-static-keyword
   
 ## 📊 Progress Tracker
 
@@ -137,6 +138,7 @@ to advanced core concepts.
   - 01-class-object
   - 02-constructors
   - 03-encapsulation
+  - 04-static-keyword
     
       
 - .gitignore
