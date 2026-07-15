@@ -1,3 +1,4 @@
+package company_employee_management;
 class Employee {
 
     // Employee ID
