@@ -1,119 +1,160 @@
 # Final Keyword in Java
 
-## 📌 Objective
+## 📌 Overview
 
-This module demonstrates how the `final` keyword works in Java.
+This module demonstrates the different uses of the `final` keyword in Java through practical examples.
 
-The `final` keyword is used to prevent modification. It can be applied to:
+The `final` keyword is used to restrict modification in Java. It can be applied to variables, methods, and classes.
 
-- Variables
-- Methods
-- Classes
+This project focuses on:
 
-This module focuses on **final variables** and **final reference variables**.
-
----
-
-# Topics Covered
-
-- final variable
-- Constant variables
-- final reference variable
-- Mutable objects
+- Final Variables
+- Final Methods
+- Final Classes
+- Constructor Chaining
 - Encapsulation
-- Constructor validation
-- Getter and Setter methods
+- Inheritance
+- Object Creation
+- Compile-Time Restrictions
 
 ---
 
-# Project Structure
+## 📂 Project Structure
 
 ```
 08-final-keyword/
 ├── FinalVariableDemo.java
+├── FinalMethodDemo.java
+├── FinalClassDemo.java
 ├── README.md
 └── InterviewQuestions.md
 ```
 
 ---
 
-# Concepts Learned
+## 📖 Programs Included
 
-## 1. Final Variable
+### 1. FinalVariableDemo.java
 
-A variable declared with `final` can be assigned only once.
+**Concepts Covered**
 
-Example:
+- `final` variables
+- Constants
+- Immutable references
+- Difference between a final reference and a mutable object
 
-```java
-final int MAX_STUDENTS = 100;
-```
+**Learning Outcome**
 
-Trying to reassign it results in a compile-time error.
-
----
-
-## 2. Final Reference Variable
-
-A final reference cannot point to another object.
-
-```java
-final Student s1 = new Student("Yasir", "Java");
-```
-
-This is not allowed:
-
-```java
-s1 = new Student("Aradhya", "Python");
-```
-
-Compile-time Error
-
-However, modifying the object's state is allowed.
-
-```java
-s1.setCourse("Java Backend");
-```
-
-The reference remains the same while the object changes.
+- A final variable can only be assigned once.
+- A final reference cannot point to another object.
+- The object itself can still be modified.
 
 ---
 
-# Key Difference
+### 2. FinalMethodDemo.java
 
-| Final Reference | Object |
-|----------------|--------|
-| Cannot change | Can change |
-| Fixed reference | Mutable state |
+**Concepts Covered**
 
----
+- `final` methods
+- Inheritance
+- Constructor chaining
+- Method inheritance
+- Encapsulation
 
-# Naming Convention
+**Learning Outcome**
 
-Constants should be written using **UPPER_SNAKE_CASE**.
-
-Example:
-
-```java
-final double PI = 3.14159;
-final int MAX_STUDENTS = 100;
-final String INSTITUTE_NAME = "Indian Institutes of Technology";
-```
+- A final method is inherited by child classes.
+- A final method cannot be overridden.
+- Child classes can call the inherited final method.
 
 ---
 
-# Key Takeaways
+### 3. FinalClassDemo.java
 
-- `final` variables cannot be reassigned.
-- `final` references cannot point to another object.
-- A `final` object reference can still modify the object's state.
-- Constants follow the UPPER_SNAKE_CASE naming convention.
-- `final` helps write safer and more maintainable code.
+**Concepts Covered**
+
+- Final classes
+- Object creation
+- Constructors
+- Compile-time restrictions
+
+**Learning Outcome**
+
+- A final class can be instantiated.
+- A final class cannot be extended.
+- Final classes help protect important implementations.
 
 ---
 
-# Author
+## 🧠 Key Concepts Learned
 
-**Aradhya Thakur**
+- `final` variable
+- `final` reference
+- `final` method
+- `final` class
+- Constructor chaining
+- `super`
+- Encapsulation
+- Inheritance
+- Compile-time errors
 
-Java Backend Developer Journey (2026)
+---
+
+## 📌 Important Rules
+
+### Final Variable
+
+- Can be assigned only once.
+- Cannot be reassigned.
+
+### Final Reference
+
+- Cannot point to another object.
+- The object's state can still change.
+
+### Final Method
+
+- Can be inherited.
+- Cannot be overridden.
+
+### Final Class
+
+- Can be instantiated.
+- Cannot be inherited.
+
+---
+
+## 💡 Interview Highlights
+
+- Difference between a final variable and a final reference
+- Why final methods cannot be overridden
+- Why String is declared final
+- Why final classes improve security and reliability
+- Difference between final methods and final classes
+
+---
+
+## 🎯 Learning Outcome
+
+After completing this module, you should be able to:
+
+- Explain all uses of the `final` keyword.
+- Use final variables correctly.
+- Prevent method overriding using final methods.
+- Prevent inheritance using final classes.
+- Understand compile-time restrictions related to final.
+- Answer common Java interview questions on the `final` keyword.
+
+---
+
+## 🚀 Next Module
+
+**Abstract Classes**
+
+Topics include:
+
+- Abstract classes
+- Abstract methods
+- Concrete methods
+- Real-world design
+- Abstraction in Java
