@@ -81,7 +81,9 @@ to advanced core concepts.
 - 02-constructors
 - 03-encapsulation
 - 04-static-keyword
-- 05-memory-management
+- 06-inheritance
+- 07-memory-management
+- 08-abstract-classes
   
 ## 📊 Progress Tracker
 
@@ -140,7 +142,9 @@ to advanced core concepts.
   - 02-constructors
   - 03-encapsulation
   - 04-static-keyword
-  - 05-memory-management
+  - 06-inheritance
+  - 07-memory-management
+  - 08-abstract-classes
     
       
 - .gitignore
