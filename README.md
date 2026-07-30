@@ -142,9 +142,29 @@ to advanced core concepts.
   - 02-constructors
   - 03-encapsulation
   - 04-static-keyword
-  - 06-inheritance
-  - 07-memory-management
+  - 06-inheritance/
+     - 01-why-inheritance
+     - 02-extends-keyword
+     - 03-constructor-chaining
+     - 04-super-keyword
+     - 05-method-overriding
+     - 06-runtime-polymorphism
+     - 07-upcasting-downcasting
+     - 08-final-keyword
+       
+  - 07-memory-management/
+    - 01-java-memory-model
+    - 02-stack-memory
+    - 03-heap-memor
+    - 04-reference-variables
+    - 05-object-references
+    - 06-stack-vs-heap
+    - 07-null-reference
+    - 08-garbage-collection
+    - 09-object-creation-process
+    
   - 08-abstract-classes
+  - z-oops-practice
     
       
 - .gitignore
