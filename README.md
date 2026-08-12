@@ -84,6 +84,7 @@ to advanced core concepts.
 - 06-inheritance
 - 07-memory-management
 - 08-abstract-classes
+- 09-interfaces
   
 ## 📊 Progress Tracker
 
@@ -165,6 +166,15 @@ to advanced core concepts.
     
   - 08-abstract-classes
   - 09-interfaces/
+    - 01-introduction
+	- 02-multiple-interfaces
+    - 03-default-methods
+	- 04-static-methods
+	- 05-private-methods
+    - 06-functional-interface
+	- 07-lambda-expressions
+    - 08-functional-interfaces
+      
   - z-oops-practice
     
       
