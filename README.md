@@ -85,6 +85,7 @@ to advanced core concepts.
 - 07-memory-management
 - 08-abstract-classes
 - 09-interfaces
+- 10-composition
   
 ## 📊 Progress Tracker
 
@@ -174,7 +175,8 @@ to advanced core concepts.
     - 06-functional-interface
 	- 07-lambda-expressions
     - 08-functional-interfaces
-      
+
+  - 10-composition   
   - z-oops-practice
     
       
