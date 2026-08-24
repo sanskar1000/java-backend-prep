@@ -175,8 +175,21 @@ to advanced core concepts.
     - 06-functional-interface
 	- 07-lambda-expressions
     - 08-functional-interfaces
+    - 09-method-references
+    - 10-functional-interface-practice
 
-  - 10-composition   
+  - 10-composition
+    - 01-car-engine
+    - 02-library-book
+    - 03-composition-vs-aggregation
+    - 04-association
+    - 05-dependency
+    - 06-solid-srp
+    - 07-solid-ocp
+    - 08-solid-lsp
+    - 10-solid-dip
+    - 9-solid-isp
+      
   - z-oops-practice
     
       
