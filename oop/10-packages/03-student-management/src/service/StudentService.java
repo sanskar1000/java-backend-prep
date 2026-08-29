@@ -1,54 +1,116 @@
-package util;
+package service;
 
 import model.Student;
+import util.StudentValidator;
 
 /**
- * Utility class responsible for validating Student objects.
+ * Provides business operations related to Student objects.
  *
- * <p>Validation rules:</p>
+ * <p>This service is responsible for:
  * <ul>
- *     <li>Student must not be null.</li>
- *     <li>Student ID must not be null or blank.</li>
- *     <li>Name must not be null or blank.</li>
- *     <li>Age must be between 16 and 100.</li>
- *     <li>Marks must be between 0 and 100.</li>
+ *     <li>Validating student data</li>
+ *     <li>Displaying student information</li>
+ *     <li>Calculating pass/fail result</li>
+ *     <li>Determining student grade</li>
+ *     <li>Checking scholarship eligibility</li>
  * </ul>
  */
-public class StudentValidator {
+public class StudentService {
+
+    private final StudentValidator validator;
 
     /**
-     * Validates a Student object.
+     * Creates a StudentService with a StudentValidator.
      *
-     * @param student student object to validate
-     * @return true if the student is valid; otherwise false
+     * @param validator validator used to validate student data
+     * @throws IllegalArgumentException if validator is null
      */
-    public boolean isValid(Student student) {
+    public StudentService(StudentValidator validator) {
 
-        if (student == null) {
-            return false;
+        if (validator == null) {
+            throw new IllegalArgumentException(
+                    "StudentValidator cannot be null."
+            );
         }
 
-        String studentId = student.getStudentId();
-        String name = student.getName();
-        int age = student.getAge();
+        this.validator = validator;
+    }
+
+    /**
+     * Displays complete student information.
+     *
+     * @param student student whose information should be displayed
+     */
+    public void displayStudent(Student student) {
+
+        if (!validator.isValid(student)) {
+            System.out.println("Invalid student data.");
+            return;
+        }
+
+        System.out.println("------- Student Details -------");
+        System.out.println("Student ID   : " + student.getStudentId());
+        System.out.println("Name         : " + student.getName());
+        System.out.println("Age          : " + student.getAge());
+        System.out.println("Marks        : " + student.getMarks());
+        System.out.println("Result       : " + getResult(student));
+        System.out.println("Grade        : " + getGrade(student));
+        System.out.println(
+                "Scholarship  : " + getScholarshipStatus(student)
+        );
+    }
+
+    /**
+     * Determines whether the student has passed.
+     *
+     * @param student student whose result is checked
+     * @return "Pass" if marks are 40 or above, otherwise "Fail"
+     */
+    public String getResult(Student student) {
+
+        if (student.getMarks() >= 40) {
+            return "Pass";
+        }
+
+        return "Fail";
+    }
+
+    /**
+     * Determines the grade based on marks.
+     *
+     * @param student student whose grade is calculated
+     * @return grade from A to F
+     */
+    public String getGrade(Student student) {
+
         double marks = student.getMarks();
 
-        if (studentId == null || studentId.isBlank()) {
-            return false;
+        if (marks >= 90) {
+            return "A";
+        } else if (marks >= 80) {
+            return "B";
+        } else if (marks >= 70) {
+            return "C";
+        } else if (marks >= 60) {
+            return "D";
+        } else {
+            return "F";
+        }
+    }
+
+    /**
+     * Checks whether the student is eligible for a scholarship.
+     *
+     * @param student student whose eligibility is checked
+     * @return "Eligible" if the student has 90 or more marks,
+     *         otherwise "Not Eligible"
+     */
+    public String getScholarshipStatus(Student student) {
+
+        if (student.getMarks() >= 90) {
+            return "Eligible";
         }
 
-        if (name == null || name.isBlank()) {
-            return false;
-        }
-
-        if (age < 16 || age > 100) {
-            return false;
-        }
-
-        if (marks < 0 || marks > 100) {
-            return false;
-        }
-
-        return true;
+        return "Not Eligible";
     }
 }
