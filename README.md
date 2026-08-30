@@ -86,6 +86,7 @@ to advanced core concepts.
 - 08-abstract-classes
 - 09-interfaces
 - 10-composition
+- 10-packages
   
 ## 📊 Progress Tracker
 
@@ -189,7 +190,9 @@ to advanced core concepts.
     - 08-solid-lsp
     - 10-solid-dip
     - 9-solid-isp
-      
+
+  - 10-packages
+     
   - z-oops-practice
     
       
