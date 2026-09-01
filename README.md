@@ -192,6 +192,10 @@ to advanced core concepts.
     - 9-solid-isp
 
   - 10-packages
+    - 01-basic-package
+    - 02-multiple-packages
+    - 03-student-management
+    - 04-bank-account
      
   - z-oops-practice
     
