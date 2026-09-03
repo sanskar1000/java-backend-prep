@@ -87,6 +87,8 @@ to advanced core concepts.
 - 09-interfaces
 - 10-composition
 - 10-packages
+
+### Exception Handling (OOP)
   
 ## 📊 Progress Tracker
 
@@ -195,10 +197,11 @@ to advanced core concepts.
     - 01-basic-package
     - 02-multiple-packages
     - 03-student-management
-    - 04-bank-account
+    - 04-bank-account 
      
   - z-oops-practice
-    
+
+- exception-handling/
       
 - .gitignore
 -  README.md
