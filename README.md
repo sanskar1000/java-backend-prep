@@ -101,8 +101,8 @@ to advanced core concepts.
 | Methods | ✅ Done |
 | Arrays |  ✅ Done |
 | Strings |  ✅ Done |
-| OOP | 🔄 Practicing |
-| Exception Handling | Next |
+| OOP | ✅ Done |
+| Exception Handling |  🔄 Practicing |
 
 ## Folder Structure
 
