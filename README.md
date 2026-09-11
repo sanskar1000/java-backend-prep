@@ -202,7 +202,15 @@ to advanced core concepts.
   - z-oops-practice
 
 - exception-handling/
-      
+   - 01-why-exceptions-exist
+   - 02-exception-hierarchy
+   - 03-checked-vs-unchecked
+   - 04-try-catch
+   - 05-multiple-catch
+   - 06-finally
+   - 07-throw
+   - 08-throws
+     
 - .gitignore
 -  README.md
 
