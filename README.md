@@ -210,6 +210,9 @@ to advanced core concepts.
    - 06-finally
    - 07-throw
    - 08-throws
+   - 09-custom-exceptions
+   - 10-exception-chaining
+   - 11-rethrowing
      
 - .gitignore
 -  README.md
