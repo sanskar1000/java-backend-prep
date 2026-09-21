@@ -1,0 +1,72 @@
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * Demonstrates how HashSet handles custom objects when
+ * equals() and hashCode() are not overridden.
+ *
+ * <p>Two Student objects are created with the same name.
+ * However, because the Student class does not override
+ * equals() and hashCode(), HashSet treats them as different
+ * objects and stores both of them.</p>
+ *
+ * <p>Expected Output:</p>
+ * <pre>
+ * 2
+ * </pre>
+ *
+ * Key Concepts:
+ * - HashSet
+ * - Set interface
+ * - Custom objects in HashSet
+ * - Object identity
+ * - equals()
+ * - hashCode()
+ * - Duplicate detection
+ */
+class Student {
+
+    /** Stores the student's name. */
+    String name;
+
+    /**
+     * Creates a Student object with the specified name.
+     *
+     * @param name the student's name
+     */
+    Student(String name) {
+        this.name = name;
+    }
+}
+
+/**
+ * Demonstrates HashSet behavior with custom Student objects.
+ *
+ * <p>This example intentionally does not override equals()
+ * and hashCode() in the Student class.</p>
+ */
+public class HashSetEqualsHashCodeDemo {
+
+    /**
+     * Program entry point.
+     *
+     * @param args command-line arguments
+     */
+    public static void main(String[] args) {
+
+        // Create a HashSet to store Student objects.
+        Set<Student> students = new HashSet<>();
+
+        // Create two different Student objects with the same name.
+        Student s1 = new Student("Aradhya");
+        Student s2 = new Student("Aradhya");
+
+        // Add both Student objects to the HashSet.
+        students.add(s1);
+        students.add(s2);
+
+        // Both objects are stored because equals() and hashCode()
+        // have not been overridden.
+        System.out.println(students.size());
+    }
+}
