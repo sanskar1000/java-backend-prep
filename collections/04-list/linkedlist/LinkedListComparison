@@ -1,0 +1,98 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+/**
+ * ------------------------------------------------------------
+ * Program Name : LinkedListComparison
+ * Topic        : ArrayList vs LinkedList
+ * Level        : Beginner to Intermediate
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program compares common operations of ArrayList and
+ * LinkedList and demonstrates their different time complexities.
+ *
+ * Key Concepts:
+ * - Random access
+ * - Insertion
+ * - Removal
+ * - Beginning and end operations
+ * - Indexed traversal
+ *
+ * Important:
+ * ArrayList provides fast random access using indexes.
+ * LinkedList provides efficient insertion and removal at
+ * the beginning and end of the list.
+ *
+ * ------------------------------------------------------------
+ */
+
+public class LinkedListComparison {
+
+    public static void main(String[] args) {
+
+        // --------------------------------------------------------
+        // LinkedList
+        // --------------------------------------------------------
+
+        LinkedList<Integer> linkedList = new LinkedList<>();
+
+        linkedList.add(22);
+        linkedList.add(23);
+        linkedList.add(24);
+        linkedList.add(25);
+
+        System.out.println("----- LinkedList -----");
+
+        System.out.println("get(2) : " + linkedList.get(2)); // O(n)
+
+        linkedList.add(99);           // O(1) at end
+        linkedList.addFirst(11);      // O(1)
+        linkedList.addLast(99);       // O(1)
+        linkedList.removeFirst();     // O(1)
+        linkedList.removeLast();      // O(1)
+        linkedList.add(3, 84);        // O(n)
+        linkedList.remove(1);         // O(n)
+
+        /*
+         * Indexed access with LinkedList is O(n).
+         * Therefore, traversing using get(i) repeatedly
+         * results in O(n²) time.
+         */
+        for (int i = 0; i < linkedList.size(); i++) {
+            System.out.println(linkedList.get(i));
+        }
+
+        // --------------------------------------------------------
+        // ArrayList
+        // --------------------------------------------------------
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        arrayList.add(42);
+        arrayList.add(53);
+        arrayList.add(64);
+        arrayList.add(75);
+
+        System.out.println("\n----- ArrayList -----");
+
+        System.out.println("get(2) : " + arrayList.get(2)); // O(1)
+
+        arrayList.add(99);       // Amortized O(1)
+        arrayList.add(0, 11);    // O(n)
+        arrayList.add(99);       // Amortized O(1)
+        arrayList.remove(0);     // O(n)
+        arrayList.remove(arrayList.size() - 1); // O(1)
+        arrayList.add(3, 84);    // O(n)
+        arrayList.remove(1);     // O(n)
+
+        /*
+         * ArrayList provides O(1) random access.
+         * Therefore, indexed traversal is O(n).
+         */
+        for (int i = 0; i < arrayList.size(); i++) {
+            System.out.println(arrayList.get(i));
+        }
+    }
+}
