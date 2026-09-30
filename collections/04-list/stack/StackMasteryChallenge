@@ -1,0 +1,126 @@
+import java.util.Stack;
+
+/**
+ * ------------------------------------------------------------
+ * Program Name : StackMasteryChallenge
+ * Topic        : Java Collections - Stack
+ * Level        : Beginner to Intermediate
+ * Author       : Aradhya Thakur
+ * Year         : 2026
+ *
+ * Description:
+ * This program is a comprehensive practice challenge for the
+ * Java Stack class.
+ *
+ * A Stack follows the LIFO principle:
+ *
+ * LIFO = Last In, First Out
+ *
+ * The element added last is removed first.
+ *
+ * Concepts Covered:
+ * - Creating a Stack
+ * - push()
+ * - pop()
+ * - peek()
+ * - size()
+ * - search()
+ * - empty()
+ * - Repeatedly removing elements using a while loop
+ *
+ * Important:
+ * Stack.search() returns the 1-based position of an element
+ * measured from the top of the Stack.
+ *
+ * If an element does not exist:
+ * search() returns -1.
+ *
+ * Time Complexity:
+ * push()   : O(1)
+ * pop()    : O(1)
+ * peek()   : O(1)
+ * size()   : O(1)
+ * search() : O(n)
+ * empty()  : O(1)
+ *
+ * Space Complexity : O(n)
+ * ------------------------------------------------------------
+ */
+
+public class StackMasteryChallenge {
+
+    public static void main(String[] args) {
+
+        // Create an empty Stack of Integer values.
+        Stack<Integer> stack = new Stack<>();
+
+        // --------------------------------------------------------
+        // Add elements using push()
+        // --------------------------------------------------------
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+        stack.push(60);
+
+        System.out.println("Original Stack : " + stack);
+        System.out.println("Top Element    : " + stack.peek());
+        System.out.println("Size           : " + stack.size());
+
+        // --------------------------------------------------------
+        // Remove the top two elements.
+        // --------------------------------------------------------
+
+        System.out.println("Popped         : " + stack.pop());
+        System.out.println("Popped         : " + stack.pop());
+
+        // --------------------------------------------------------
+        // Add another element.
+        // --------------------------------------------------------
+
+        stack.push(70);
+
+        // View the current top element.
+        System.out.println("Top Element    : " + stack.peek());
+
+        // Remove the current top element.
+        System.out.println("Popped         : " + stack.pop());
+
+        // --------------------------------------------------------
+        // Add more elements.
+        // --------------------------------------------------------
+
+        stack.push(80);
+        stack.push(90);
+
+        System.out.println("Top Element    : " + stack.peek());
+        System.out.println("Current Stack  : " + stack);
+
+        // --------------------------------------------------------
+        // Search for elements.
+        // --------------------------------------------------------
+
+        // search() returns the 1-based position from the top.
+        System.out.println("Position of 20 : " + stack.search(20));
+        System.out.println("Position of 70 : " + stack.search(70));
+
+        // Returns -1 because 100 is not present.
+        System.out.println("Position of 100: " + stack.search(100));
+
+        // Check whether the Stack is empty.
+        System.out.println("Is Empty?      : " + stack.empty());
+
+        // --------------------------------------------------------
+        // Remove all elements until the Stack becomes empty.
+        // --------------------------------------------------------
+
+        while (!stack.empty()) {
+            System.out.println("Removing       : " + stack.pop());
+        }
+
+        // Verify that the Stack is now empty.
+        System.out.println("Is Empty?      : " + stack.empty());
+    }
+}
